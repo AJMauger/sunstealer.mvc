@@ -55,7 +55,7 @@ public class Configuration {
       RequirePkce = true,
     },
 
-    // AJM: client: hybrid and client credentials => sunstealer.electron
+    // ajm: client: hybrid and client credentials => sunstealer.electron ------------------------
     new Duende.IdentityServer.Models.Client() {
       AccessTokenLifetime = 600,
       AllowedGrantTypes = Duende.IdentityServer.Models.GrantTypes.HybridAndClientCredentials,
