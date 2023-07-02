@@ -8,13 +8,12 @@ An Identity Server 6 is required with
 
 using Duende.IdentityServer.Models;
 
-
 using Duende.IdentityServer.Models;
 
 namespace Sunstealer.IdentityServer.Models;
 
-
 public class Configuration {
+
   // ajm: ---------------------------------------------------------------------------------------
   public static IEnumerable<Duende.IdentityServer.Models.ApiResource> ApiResources =>
   new List<Duende.IdentityServer.Models.ApiResource> {
