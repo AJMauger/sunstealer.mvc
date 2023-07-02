@@ -2,15 +2,13 @@
 
 Sandpit aspcore 7.0 API server with Identity and Swagger.
 
-An Identity Server 6 is required with:
+An Identity Server 6 is required with
 
-
+# code:
 
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Models;
-
 namespace Sunstealer.IdentityServer.Models;
-
 public class Configuration {
   // ajm: ---------------------------------------------------------------------------------------
   public static IEnumerable<Duende.IdentityServer.Models.ApiResource> ApiResources =>
