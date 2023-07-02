@@ -10,6 +10,7 @@ using Duende.IdentityServer.Models;
 
 namespace Sunstealer.IdentityServer.Models;
 
+
 public class Configuration {
   // ajm: ---------------------------------------------------------------------------------------
   public static IEnumerable<Duende.IdentityServer.Models.ApiResource> ApiResources =>
