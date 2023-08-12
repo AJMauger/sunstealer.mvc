@@ -1,14 +1,12 @@
-# Sunstealer.MVC aspcore 7.0
+# sunstealer.mvc.odata aspcore 6.0
 
-Sandpit aspcore 7.0 API server with Identity and Swagger.
-
+Sandpit aspcore 6.0 API server with Identity and Swagger.
 An Identity Server 6 is required with:
 
-
-
+```csharp
 using Duende.IdentityServer.Models;
 
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models;/
 
 namespace Sunstealer.IdentityServer.Models;
 
@@ -18,7 +16,7 @@ public class Configuration {
     new Duende.IdentityServer.Models.ApiResource("sunstealer.read", "sunstealer.read"),
     new Duende.IdentityServer.Models.ApiResource("sunstealer.write", "sunstealer.write")
   };
-  
+
   public static IEnumerable<Duende.IdentityServer.Models.ApiScope> ApiScopes =>
   new List<Duende.IdentityServer.Models.ApiScope> {
     new Duende.IdentityServer.Models.ApiScope("sunstealer.read", "sunstealer.read"),
@@ -29,7 +27,7 @@ public class Configuration {
     new List<IdentityResource> { new IdentityResources.OpenId(), new IdentityResources.Profile()
   };
 
-  public static IEnumerable<Duende.IdentityServer.Models.Client> Clients => new List<Duende.IdentityServer.Models.Client> {  
+  public static IEnumerable<Duende.IdentityServer.Models.Client> Clients => new List<Duende.IdentityServer.Models.Client> {
     new Duende.IdentityServer.Models.Client() {
       AllowAccessTokensViaBrowser = true,
       AllowedGrantTypes = Duende.IdentityServer.Models.GrantTypes.Code,
@@ -48,6 +46,7 @@ public class Configuration {
       RedirectUris = { "https://localhost:5001/signin-oidc", "https://localhost:5001/Swagger/oauth2-redirect.html" },
       RequirePkce = true,
     },
+
     new Duende.IdentityServer.Models.Client() {
       AccessTokenLifetime = 600,
       AllowedGrantTypes = Duende.IdentityServer.Models.GrantTypes.HybridAndClientCredentials,
@@ -66,7 +65,7 @@ public class Configuration {
       RequirePkce = true,
     }
   };
-  
+
   public static System.Collections.Generic.List<Duende.IdentityServer.Test.TestUser> Users = new System.Collections.Generic.List<Duende.IdentityServer.Test.TestUser>() {
     new Duende.IdentityServer.Test.TestUser() {
       SubjectId = "AAAAAAAA-BBBB-CCCC-DDDD-EEEEEEEEEEEE",
@@ -79,3 +78,4 @@ public class Configuration {
     }
   };
 }
+```
