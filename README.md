@@ -1,6 +1,6 @@
 # sunstealer.mvc aspcore 7.0
 
-Sandpit aspcore 6.0 API server with Identity and Swagger.
+Sandpit .net asp core 7.0 API server with Identity and Swagger.
 An Identity Server 6 is required with:
 
 ```csharp
